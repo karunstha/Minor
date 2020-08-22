@@ -1,0 +1,18 @@
+{% extends 'MainPage/base.html' %}
+
+{% block navbar %}
+    <header>
+        <nav>
+            <div class="row">
+                <h3 class="current-selection"><a href="#">Menus</a></h3>
+                <ul class='main-nav'>
+                    
+                    <li><a href="/auth/home">Curent Orders</a></li>
+                    <li><a href="/auth/billing">Billings</a></li>
+                    <li><a href="/auth/tables">Tables</a></li>
+                    <li><a href="/auth/history">History</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+{% endblock navbar%}

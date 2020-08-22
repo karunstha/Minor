@@ -1,0 +1,18 @@
+<h1> HEllo this is Home Page</h1>
+<h2>
+{% if user.is_authenticated %}
+    <p> Authenthicated</p>
+{% else %}
+    <p> Not Authenthicated </p>
+{% endif %}
+</h2>
+<button type="Button">
+    <a href="/auth/logout/"> Logout </a> 
+</button>
+{% if messages %}
+        {% for message in messages %}
+        {% if message.tags == 'success' %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+{% endif %}
