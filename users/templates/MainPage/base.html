@@ -16,7 +16,7 @@
     
     {% endblock navbar %}
     <div>
-         {% if user.is_authenticated %}
+        {% if user.is_authenticated %}
             <h2 class="res_name">Welcome  {{ user.name }} </h2>
             <div class="log_out">
                 <a href="/auth/logout/"> Logout </a> 
@@ -39,7 +39,5 @@
 {% if messages %}
         {% for message in messages %}
         {% if message.tags == 'success' %}  <script>alert("{{ message }}")</script> {% endif %}
-
         {% endfor %}
-
 {% endif %}
